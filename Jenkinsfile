@@ -6,6 +6,7 @@ pipeline {
                 nodejs(nodeJSInstallationName: 'nodejs') {
                     withAWS(credentials: 'AWS-POC') {
                         sh '''
+                            apt install jq
                             integracion/scriptcreds.sh
 
                         '''
