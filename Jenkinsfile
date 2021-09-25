@@ -6,8 +6,8 @@ pipeline {
                 nodejs(nodeJSInstallationName: 'nodejs') {
                     withAWS(credentials: 'AWS-POC') {
                         sh '''
-                            
-                            integracion/scriptcreds.sh
+                            cd integracion
+                            ./scriptcreds.sh
 
                         '''
                     }
