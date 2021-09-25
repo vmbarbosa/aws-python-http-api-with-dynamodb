@@ -5,7 +5,7 @@ pipeline {
             steps {
                 nodejs(nodeJSInstallationName: 'nodejs') {
                     withAWS(credentials: 'AWS-POC') {
-                        sh 'serverless remove'
+                        sh 'serverless deploy'
                     }
                 }
             }
