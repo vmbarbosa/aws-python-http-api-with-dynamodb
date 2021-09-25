@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'imega/jq'
+        }
+    }
     stages {
         stage('TestLambda') {
             steps {
