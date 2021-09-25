@@ -11,7 +11,7 @@ pwd
 
 ls
 
-./gradlew clean credencialesAWS "-DaccessKey=$AWS_ACCESS_KEY_ID" \
+integracion/gradlew clean credencialesAWS "-DaccessKey=$AWS_ACCESS_KEY_ID" \
 "-DsecretKey=$AWS_SECRET_ACCESS_KEY" \
 "-DsessionToken=$AWS_SESSION_TOKEN" \
 --tests GateE2ERunner --info
